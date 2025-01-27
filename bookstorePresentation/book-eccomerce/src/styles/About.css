@@ -1,0 +1,38 @@
+.about-us {
+  max-width: 600px;
+  background-color: white;
+  border: 1px solid var(--light-grey);
+  border-radius: 14px;
+  margin: 50px auto 0;
+  padding: 30px;
+  font-family: Arial;
+  text-align: start;
+}
+
+.about-us h1 {
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.about-us h2 {
+  font-size: 25px;
+  margin: 12px 0;
+}
+
+.about-us h3 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.about-us h4 {
+  margin: 8px 0;
+}
+
+.about-us ul {
+  display: initial;
+  text-align: start;
+}
+.about-us li {
+  padding-left: 40px;
+  padding-bottom: 4px;
+}

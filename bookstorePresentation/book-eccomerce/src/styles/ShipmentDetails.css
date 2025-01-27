@@ -1,0 +1,55 @@
+.form-container {
+  background-color: white;
+  border: 1px solid var(--light-grey);
+  border-radius: 10px;
+  padding: 15px 30px;
+}
+
+.form-section {
+  margin-bottom: 24px;
+}
+
+h2,
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 16px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+input[type="text"],
+select,
+option {
+  flex: 1;
+  padding: 10px;
+  font-weight: 500;
+  color: var(--font-color);
+  border: 1px solid var(--light-grey);
+  border-radius: 4px;
+  font-size: 1em;
+  outline: none;
+  background-color: white;
+}
+
+select,
+option {
+  color: var(--grey-color);
+}
+
+input[type="text"]:hover,
+select:hover,
+option:hover,
+input[type="text"]:focus,
+select:focus,
+option:focus {
+  border-color: var(--orange-color);
+}
+
+input::placeholder {
+  color: var(--grey-color);
+}

@@ -1,0 +1,117 @@
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  margin: auto;
+  min-height: 100vh;
+  padding: 30px 0 70px;
+}
+
+.product-details-container > a {
+  align-self: flex-start;
+  padding: 8px 7px;
+  text-decoration: underline;
+  color: rgb(0, 57, 180);
+  transition: opacity 0.2s ease-in;
+}
+
+.product-details-container > a:hover {
+  opacity: 0.75;
+}
+
+.product-details {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 25px 45px;
+  border-radius: 16px;
+  border: 1px solid var(--light-grey);
+}
+
+.product-details > img {
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+.tite-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tite-container > p {
+  color: var(--orange-color);
+}
+
+.book-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-info-container > p {
+  border-bottom: 1px solid var(--light-grey);
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+.book-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px 8px;
+  padding: 10px 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-item > p {
+  font-weight: 700;
+  padding: 0;
+}
+
+.book-summary-container {
+  border-top: 1px solid var(--orange-color);
+  border-bottom: 1px solid var(--grey-color);
+  margin-bottom: 40px;
+}
+.book-summary-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--font-color);
+  background-color: white;
+  padding: 15px;
+}
+.book-summary-button h2 {
+  margin: 0;
+}
+
+.book-summary-container img {
+  width: 20px;
+}
+
+.book-description-container {
+  background-color: var(--light-grey);
+  padding: 15px 15px 40px 15px;
+}
+
+.book-description {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.hide {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+}

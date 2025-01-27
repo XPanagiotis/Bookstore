@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/for-developers.css" />
+    <title>About Our Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Σχετικά με το Έργο μας!!</h1>
+
+      <h2>Οι Τεχνολογίες που χρησιμοποιήσαμε:</h2>
+      <ul>
+        <li>React για τη δημιουργία της διεπαφής</li>
+        <li>
+          Vite για τη δημιουργία των production και development versions του
+          frontend
+        </li>
+        <li>MySQL για την αποθήκευση των δεδομένων των βιβλίων</li>
+        <li>
+          Node.js και npm για τη διαχείριση των dependences και την εκτέλεση του
+          server
+        </li>
+        <li>Apache Tomcat για το hosting της εφαρμογής</li>
+      </ul>
+
+      <h2>Workflow</h2>
+      <h3>Περιβάλλον</h3>
+      <ul>
+        <li>
+          Εγκατάσταση του Node.js και npm για τη διαχείριση των dependences
+        </li>
+        <li>Διαμόρφωση του Vite με το plugin για React</li>
+      </ul>
+
+      <h3>Development Workflow</h3>
+      <h4>Ανάπτυξη Frontend:</h4>
+      <ul>
+        <li>
+          Δημιουργήσαμε components και φτίαξαμε το user interface με React
+        </li>
+        <li>
+          Δημιουργήσαμε entry point στο <code>index.html</code> που αναφέρεται
+          στο αρχείο <code>src/main.jsx</code>, το οποίο αρχικοποιεί την
+          εφαρμογή React
+        </li>
+        <li>
+          Κάναμε το styling χρησιμοποιώντας αρχεία CSS στον κατάλογο
+          <code>src/styles</code>
+        </li>
+      </ul>
+
+      <h4>Βάση Δεδομένων Backend:</h4>
+      <ul>
+        <li>
+          Σχεδιάσαμε μια βάση δεδομένων MySQL με έναν πίνακα books για την
+          αποθήκευση δεδομένων
+        </li>
+        <li>
+          Διαμορφώσαμε τον backend server για σύνδεση με τη βάση δεδομένων
+        </li>
+      </ul>
+
+      <h3>Production Workflow</h3>
+      <ul>
+        <li>
+          Δημιουργήσαμε την εφαρμογή για production χρησιμοποιώντας την εντολή
+          <code>npm run build</code>, που φτιάχνει τον φάκελο
+          <code>dist</code>
+        </li>
+        <li>Αντιγράψαμε τον φάκελο <code>dist</code> στον Tomcat</li>
+        <li>
+          Διαμορφώσαμε τον Tomcat για να εξυπηρετεί τα στατικά αρχεία,
+          επιτρέποντας την πρόσβαση στην εφαρμογή μέσω ενός browser
+        </li>
+      </ul>
+
+      <pre>
+        <h1>Η δομή των αρχείων του βιβλιωπωλείου και της παρούσας ιστοσελίδας</h1>
+        BOOKSTOREPRESENTATION/                                         BOOK-ECOMMERCE/
+├── images/                                                    │
+│   ├── background-image.jpg                                   ├── backend/
+│   ├── library-image.jpg                                      │   ├── package.json
+│   ├── monitor-1307227_1280.jpg                               │   ├── server.js
+├── styles/                                                    │
+│   ├── for-developers.css                                     ├── dist/
+│   ├── style.css                                              │
+├── videos/                                                    ├── node_modules/
+│   └── 5086-182666874_small.mp4                               │
+├── developes.html                                             ├── src/
+├── index.html                                                 │   ├── assets/
+                                                               │   ├── components/
+                                                               │   │   ├── AboutUs.jsx
+                                                               │   │   ├── Cart.jsx
+                                                               │   │   ├── CheckOut.jsx
+                                                               │   │   ├── Contact.jsx
+                                                               │   │   ├── Header.jsx
+                                                               │   │   ├── PopUp.jsx
+                                                               │   │   ├── ProductCard.jsx
+                                                               │   │   ├── ProductDetails.jsx
+                                                               │   │   ├── ProductList.jsx
+                                                               │   │   ├── ShipmentDetails.jsx
+                                                               │   │   ├── Shop.jsx
+                                                               │   │
+                                                               │   ├── styles/
+                                                               │   │   ├── About.css
+                                                               │   │   ├── App.css
+                                                               │   │   ├── Cart.css
+                                                               │   │   ├── CheckOut.css
+                                                               │   │   ├── Contact.css
+                                                               │   │   ├── Header.css
+                                                               │   │   ├── PopUp.css
+                                                               │   │   ├── ProductCard.css
+                                                               │   │   ├── ProductDetails.css
+                                                               │   │   ├── ProductList.css
+                                                               │   │   ├── ShipmentDetails.css
+                                                               │   │
+                                                               │   ├── utils/
+                                                               │       ├── countTotalOrder.js
+                                                               │
+                                                               │   ├── App.jsx
+                                                               │   ├── main.jsx
+                                                               │
+                                                               ├── .gitignore
+                                                               ├── index.html
+                                                               ├── package-lock.json
+                                                               ├── package.json
+                                                               ├── README.md
+                                                               ├── server.js
+                                                               ├── vite.config.js
+      </pre>
+
+      <h1>
+        Όλος ο κώδικας των σελίδων βρίσκεται στο github σε αυτό το link:
+        <a href=""></a>
+      </h1>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 All copyrights reserved by Libraria.</p>
+    </footer>
+  </body>
+</html>

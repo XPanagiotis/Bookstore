@@ -1,0 +1,54 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--font-color);
+
+  --font-color: rgb(53, 53, 53);
+  --white-color: rgb(243, 243, 243);
+  --light-grey: rgb(226, 226, 226);
+  --grey-color: rgb(172, 172, 172);
+  --orange-color: #fe5900;
+  --dark-orange-color: #eb5200;
+  --basic-shadow: 0 4px 8px rgb(231, 231, 231);
+}
+
+* {
+  letter-spacing: 0.015em;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  background-color: var(--white-color);
+}
+
+h1,
+h2 {
+  font-size: 1em;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer {
+  padding: 15px;
+  background-color: #aa9386;
+  text-align: center;
+  color: white;
+}
+
+#root {
+  height: 100vh;
+}

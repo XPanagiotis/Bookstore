@@ -1,0 +1,46 @@
+.check-out {
+  border-top: 1px solid var(--light-grey);
+  padding: 20px 25px;
+}
+
+.check-out h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.check-out > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+.total > p {
+  font-size: 26px;
+}
+
+.total > span {
+  font-size: 28px;
+  color: var(--orange-color);
+}
+
+.check-out-btn {
+  width: 100%;
+  background: var(--orange-color);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: center;
+}
+
+.check-out-btn:hover {
+  background: var(--dark-orange-color);
+}
